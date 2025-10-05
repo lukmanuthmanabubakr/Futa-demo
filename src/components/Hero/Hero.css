@@ -1,0 +1,114 @@
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: var(--home-filter); /* from your variables */
+  position: relative;
+  overflow-x: hidden; /* prevents horizontal scroll from large text */
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+}
+
+/* subtle overlay to ensure text is readable on all images */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.22);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1000px;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Title - typed text */
+.hero-title {
+  margin: 0 auto;
+  padding: 0;
+  color: var(--home-title-color); /* #ffd600 */
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  line-height: 1.05;
+  /* responsive sizing */
+  font-size: clamp(1.6rem, 5.2vw, 3.2rem);
+  display: block;
+  width: 100%;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+/* typed span just holds the typed characters (no forcing of width) */
+.typed {
+  display: inline;
+}
+
+/* cursor */
+.cursor {
+  display: inline-block;
+  width: 1.5px;
+  height: 1.05em;
+  margin-left: 6px;
+  vertical-align: bottom;
+  background-color: var(--home-title-color);
+  animation: blink 0.8s steps(1) infinite;
+  -webkit-animation: blink 0.8s steps(1) infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+/* subtitle / description */
+.hero-text {
+  margin-top: 1rem;
+  color: var(--home-subtext-color); /* #ffffff */
+  font-size: clamp(0.95rem, 1.7vw, 1.2rem);
+  line-height: 1.6;
+  font-weight: 400;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.45);
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Small screens: stop long single-line effects, allow wrapping */
+@media (max-width: 900px) {
+  .hero-title {
+    white-space: normal; /* allow wrapping early */
+    font-size: clamp(1.4rem, 6vw, 2.4rem);
+  }
+
+  .cursor {
+    /* keep cursor visible but less intrusive on small devices */
+    height: 1em;
+    margin-left: 4px;
+  }
+
+  .hero {
+    background-position: top center;
+    padding: 1.5rem 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: clamp(1.1rem, 7.5vw, 1.8rem);
+  }
+  .hero-text {
+    font-size: 0.92rem;
+  }
+}

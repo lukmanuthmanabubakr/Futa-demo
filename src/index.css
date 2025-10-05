@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  border: none;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* 🎨 Theme Colors */
+:root {
+  --primary-color: #6a1b9a;
+  --secondary-color: #ffd600;
+  --deep-blue: #003366;
+  --light-blue: #0097a7;
+  --brown: #5d4037;
+  --white: #ffffff;
+  --black: #212121;
+
+  /* Navbar Section */
+  --nav-bg: #e6e6e6;
+  --nav-text: #003366;
+  --nav-hover: #6a1b9a;
+  --nav-active: #ffd600;
+  --btn-bg: #6a1b9a;
+  --btn-text: #ffffff;
+  --btn-hover-bg: #5b1685;
+  --btn-hover-text: #ffffff;
+
+  /* Home Section */
+   --home-title-color: #ffd600;
+  --home-subtext-color: #ffffff;
+  --home-filter: brightness(70%) contrast(105%);
+}

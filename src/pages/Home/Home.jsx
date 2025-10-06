@@ -4,6 +4,7 @@ import Hero from "../../components/Hero/Hero";
 import Overview from "../../components/Overview/Overview";
 import Facilities from "../../components/Facilities/Facilities";
 import Achievements from "../../components/Achievements/Achievements";
+import Footer from "../../components/Footer/Footer";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Overview />
       <Facilities />
       <Achievements />
+      <Footer />
     </>
   );
 };

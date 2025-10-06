@@ -53,9 +53,9 @@
   color: var(--nav-hover);
 }
 
-.nav-links li a.active {
+/* .nav-links li a.active {
   color: var(--nav-active);
-}
+} */
 
 /* Login Button */
 .navbar-btn .login-btn {

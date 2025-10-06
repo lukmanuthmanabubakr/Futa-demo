@@ -54,4 +54,12 @@ body {
   --overview-btn-text: #ffffff;
   --overview-btn-hover-bg: #5b1685;
   --overview-btn-hover-text: #ffd600;
+
+  /* Facilities Section */
+  --facilities-bg: #003366;
+  --facilities-title-color: #ffd600;
+  --facilities-text-color: #ffffff;
+  --facilities-card-bg: rgba(255, 255, 255, 0.08);
+  --facilities-icon-color: #ffd600;
+  --facilities-card-hover-bg: rgba(255, 255, 255, 0.15);
 }

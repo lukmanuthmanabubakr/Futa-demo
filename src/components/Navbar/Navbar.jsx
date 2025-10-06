@@ -29,35 +29,35 @@ const Navbar = () => {
           <NavLink to="/">Home</NavLink>
         </li>
         <li>
-          <NavLink to="/about">About</NavLink>
+          <NavLink to="/">About</NavLink>
         </li>
         <li>
-          <NavLink to="/admissions">Admissions</NavLink>
+          <NavLink to="/">Admissions</NavLink>
         </li>
         <li>
-          <NavLink to="/faculties">Faculties</NavLink>
+          <NavLink to="/">Faculties</NavLink>
         </li>
         <li>
-          <NavLink to="/departments">Departments</NavLink>
+          <NavLink to="/">Departments</NavLink>
         </li>
         <li>
-          <NavLink to="/news">News</NavLink>
+          <NavLink to="/">News</NavLink>
         </li>
         <li>
-          <NavLink to="/portal">Portal</NavLink>
+          <NavLink to="/">Portal</NavLink>
         </li>
         <li>
-          <NavLink to="/contact">Contact</NavLink>
+          <NavLink to="/">Contact</NavLink>
         </li>
         <li className="mobile-btn">
-          <NavLink to="/login" className="login-btn">
+          <NavLink to="/" className="login-btn">
             Student Portal
           </NavLink>
         </li>
       </ul>
 
       <div className="navbar-btn">
-        <NavLink to="/login" className="login-btn">
+        <NavLink to="/" className="login-btn">
           Student Portal
         </NavLink>
       </div>

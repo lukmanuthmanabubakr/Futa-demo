@@ -1,0 +1,112 @@
+.facilities {
+  background: var(--facilities-bg);
+  color: var(--facilities-text-color);
+  padding: 5rem 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.facilities-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.facilities-title {
+  color: var(--facilities-title-color);
+  font-size: 2.6rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.facilities-title::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 4px;
+  background: var(--secondary-color);
+  margin: 0.7rem auto;
+  border-radius: 3px;
+}
+
+.facilities-subtitle {
+  font-size: 1.15rem;
+  color: #dcdcdc;
+  margin-bottom: 3rem;
+  line-height: 1.7;
+}
+
+.facilities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.facility-card {
+  background: var(--facilities-card-bg);
+  padding: 2rem 1.5rem;
+  border-radius: 15px;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+.facility-card:hover {
+  background: var(--facilities-card-hover-bg);
+  transform: translateY(-8px);
+}
+
+.facility-icon {
+  font-size: 2.5rem;
+  color: var(--facilities-icon-color);
+  margin-bottom: 1rem;
+}
+
+.facility-card h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+  color: var(--secondary-color);
+}
+
+.facility-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #f2f2f2;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .facilities-title {
+    font-size: 2.2rem;
+  }
+
+  .facilities-subtitle {
+    font-size: 1.05rem;
+  }
+
+  .facility-icon {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .facilities {
+    padding: 3.5rem 1.2rem;
+  }
+
+  .facilities-title {
+    font-size: 1.9rem;
+  }
+
+  .facility-card {
+    padding: 1.8rem 1.2rem;
+  }
+
+  .facility-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .facility-card p {
+    font-size: 0.95rem;
+  }
+}

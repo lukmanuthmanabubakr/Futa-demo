@@ -14,7 +14,7 @@ const Footer = () => {
         <div
           className="footer-about"
           data-aos="fade-up"
-          data-aos-duration="3000"
+          data-aos-duration="2000"
         >
           <h3>About Us</h3>
           <p>
@@ -26,7 +26,7 @@ const Footer = () => {
         <div
           className="footer-links"
           data-aos="fade-up"
-          data-aos-duration="3000"
+          data-aos-duration="2000"
         >
           <h3>Quick Links</h3>
           <ul>
@@ -51,7 +51,7 @@ const Footer = () => {
         <div
           className="footer-contact"
           data-aos="fade-up"
-          data-aos-duration="3000"
+          data-aos-duration="2000"
         >
           <h3>Contact Info</h3>
           <p>123 University Avenue, Akure, Nigeria</p>
@@ -77,7 +77,7 @@ const Footer = () => {
       <div
         className="footer-bottom"
         data-aos="fade-up"
-        data-aos-duration="3000"
+        data-aos-duration="2000"
       >
         <p>
           &copy; {new Date().getFullYear()} FUTA Demo University. All Rights

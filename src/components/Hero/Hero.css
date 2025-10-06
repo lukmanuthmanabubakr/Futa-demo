@@ -103,6 +103,7 @@
   .hero {
     background-position: top center;
     padding: 1.5rem 0.8rem;
+    min-height: 80vh;
   }
 }
 
@@ -112,5 +113,18 @@
   }
   .hero-text {
     font-size: 0.92rem;
+  }
+  .hero {
+    background-position: top center;
+    padding: 1.5rem 0.8rem;
+    min-height: 70vh;
+  }
+}
+@media (max-width: 320px) {
+  .hero-title {
+    font-size: clamp(1.2rem, 5.2vw, 2.2rem);
+  }
+  .hero-text {
+    font-size: 0.82rem;
   }
 }

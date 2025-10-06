@@ -31,7 +31,7 @@ body {
   --black: #212121;
 
   /* Navbar Section */
-  --nav-bg: #e6e6e6;
+  --nav-bg: linear-gradient(135deg, #f9f7fc 0%, #f3e5f5 100%);
   --nav-text: #003366;
   --nav-hover: #6a1b9a;
   --nav-active: #ffd600;
@@ -41,7 +41,17 @@ body {
   --btn-hover-text: #ffffff;
 
   /* Home Section */
-   --home-title-color: #ffd600;
+  --home-title-color: #ffd600;
   --home-subtext-color: #ffffff;
   --home-filter: brightness(70%) contrast(105%);
+
+  /* Overview Section */
+  --overview-bg: linear-gradient(135deg, #f9f7fc 0%, #f3e5f5 100%);
+  --overview-title-color: #003366;
+  --overview-text-color: #4a4a4a;
+  --overview-accent: #ffd600;
+  --overview-btn-bg: #6a1b9a;
+  --overview-btn-text: #ffffff;
+  --overview-btn-hover-bg: #5b1685;
+  --overview-btn-hover-text: #ffd600;
 }

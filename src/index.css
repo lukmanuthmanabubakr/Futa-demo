@@ -62,4 +62,15 @@ body {
   --facilities-card-bg: rgba(255, 255, 255, 0.08);
   --facilities-icon-color: #ffd600;
   --facilities-card-hover-bg: rgba(255, 255, 255, 0.15);
+
+  /* Achievements Section */
+  --achievements-bg: linear-gradient(135deg, #f9f7fc 0%, #f3e5f5 100%);
+  --achievements-title-color: #003366;
+  --achievements-text-color: #4a4a4a;
+  --achievements-accent: #0097a7; 
+  --achievements-card-bg: #ffffff; 
+  --achievements-card-shadow: rgba(0, 0, 0, 0.15);
+  --achievements-icon-color: #6a1b9a;
+  --achievements-number-color: #ffd600;
+  --achievements-border-color: rgba(0, 0, 0, 0.1);
 }

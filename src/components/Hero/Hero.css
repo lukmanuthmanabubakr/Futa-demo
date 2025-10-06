@@ -7,14 +7,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  filter: var(--home-filter); /* from your variables */
+  filter: var(--home-filter);
   position: relative;
-  overflow-x: hidden; /* prevents horizontal scroll from large text */
+  overflow-x: hidden;
   padding: 2rem 1rem;
   box-sizing: border-box;
 }
 
-/* subtle overlay to ensure text is readable on all images */
+/* subtle overlay */
 .hero::before {
   content: "";
   position: absolute;
@@ -31,27 +31,51 @@
   padding: 1.5rem;
   box-sizing: border-box;
   text-align: center;
+  animation: fadeUp 1.2s ease-in-out both;
 }
 
-/* Title - typed text */
+/* fade-up animation for hero-content */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Title (typed text) */
 .hero-title {
   margin: 0 auto;
   padding: 0;
-  color: var(--home-title-color); /* #ffd600 */
+  color: var(--home-title-color);
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.6px;
   line-height: 1.05;
-  /* responsive sizing */
   font-size: clamp(1.6rem, 5.2vw, 3.2rem);
   display: block;
   width: 100%;
   word-break: break-word;
   overflow-wrap: break-word;
   word-wrap: break-word;
+  animation: slideDown 1.2s ease-out both;
 }
 
-/* typed span just holds the typed characters (no forcing of width) */
+/* smooth slide-down entrance */
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .typed {
   display: inline;
 }
@@ -65,7 +89,6 @@
   vertical-align: bottom;
   background-color: var(--home-title-color);
   animation: blink 0.8s steps(1) infinite;
-  -webkit-animation: blink 0.8s steps(1) infinite;
 }
 
 @keyframes blink {
@@ -74,10 +97,10 @@
   }
 }
 
-/* subtitle / description */
+/* subtitle */
 .hero-text {
   margin-top: 1rem;
-  color: var(--home-subtext-color); /* #ffffff */
+  color: var(--home-subtext-color);
   font-size: clamp(0.95rem, 1.7vw, 1.2rem);
   line-height: 1.6;
   font-weight: 400;
@@ -85,17 +108,28 @@
   max-width: 850px;
   margin-left: auto;
   margin-right: auto;
+  animation: fadeIn 2s ease-in both;
+  animation-delay: 0.8s;
 }
 
-/* Small screens: stop long single-line effects, allow wrapping */
+/* fade-in for text */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive */
 @media (max-width: 900px) {
   .hero-title {
-    white-space: normal; /* allow wrapping early */
+    white-space: normal;
     font-size: clamp(1.4rem, 6vw, 2.4rem);
   }
 
   .cursor {
-    /* keep cursor visible but less intrusive on small devices */
     height: 1em;
     margin-left: 4px;
   }
@@ -120,6 +154,7 @@
     min-height: 70vh;
   }
 }
+
 @media (max-width: 320px) {
   .hero-title {
     font-size: clamp(1.2rem, 5.2vw, 2.2rem);

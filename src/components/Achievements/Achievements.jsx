@@ -44,7 +44,12 @@ const Achievements = () => {
 
         <div className="achievements-grid">
           {data.map((item, index) => (
-            <div className="achievement-card" key={index}>
+            <div
+              className="achievement-card"
+              key={index}
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-center"
+            >
               <div className="achievement-icon">{item.icon}</div>
               <h3>{item.title}</h3>
               <p>{item.description}</p>

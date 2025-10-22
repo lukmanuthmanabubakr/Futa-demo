@@ -9,6 +9,7 @@ import {
   FaBusAlt,
 } from "react-icons/fa";
 
+
 const Facilities = () => {
   const facilities = [
     {
